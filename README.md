@@ -1,1 +1,1 @@
-# unity-shaders-collection
+# Shaders Collection
