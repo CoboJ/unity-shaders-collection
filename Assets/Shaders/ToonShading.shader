@@ -74,11 +74,11 @@ Shader "Custom/ToonShading"
                 float ndotl = dot(i.normal, _MainLightPosition.xyz);
                 float ndotv = saturate(dot(i.normal, i.viewDir));
 
-                float3 lut = SAMPLE_TEXTURE2D(_ToonLUT, sampler_ToonLUT, float2(ndotl, 0));
+                float4 lut = SAMPLE_TEXTURE2D(_ToonLUT, sampler_ToonLUT, float2(ndotl, 0));
                 float3 rim = _RimColor * pow(1 - ndotv, _RimPower) * ndotl;
 
-                float3 directDiffuse = lut * _MainLightColor.rgb;
-                float3 indirectDiffuse = unity_AmbientSky;
+                float3 directDiffuse = lut.xyz * _MainLightColor.rgb;
+                float3 indirectDiffuse = unity_AmbientSky.xyz;
 
                 // sample the texture
                 half4 col = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.uv) * _Color;
