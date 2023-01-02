@@ -11,7 +11,6 @@ Shader "Custom/ToonShading"
     SubShader
     {
         Tags { "RenderType"="Opaque" "RenderPipeline"="UniversalRenderPipeline" }
-        LOD 100
 
         Pass
         {
