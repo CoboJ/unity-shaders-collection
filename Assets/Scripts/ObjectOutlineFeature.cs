@@ -7,9 +7,9 @@ public class ObjectOutlineFeature : ScriptableRendererFeature
     public class PassSettings
     {
         public RenderPassEvent renderPassEvent = RenderPassEvent.AfterRendering;
-        public Renderer outlinedObject;
+        public string outlinedObjectName;
         public Material writeObject;
-        public Material applyObject;
+        public Material applyOutline;
     }
     
     public PassSettings settings = new();
