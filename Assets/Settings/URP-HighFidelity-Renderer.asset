@@ -71,7 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   settings:
-    renderPassEvent: 1000
+    renderPassEvent: 550
     outlinedObjectName: characterMedium
-    writeObject: {fileID: 2100000, guid: 62e738dfc825a4d3db2e4f4d30efced1, type: 2}
+    writeObject: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     applyOutline: {fileID: 2100000, guid: 62e738dfc825a4d3db2e4f4d30efced1, type: 2}
