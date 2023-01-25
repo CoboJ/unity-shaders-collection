@@ -37,7 +37,7 @@ Shader "Custom/ScreenBlur"
         v2f vert (appdata v)
         {
             v2f o;
-            o.vertex = TransformObjectToHClip(v.vertex.xyc);
+            o.vertex = TransformObjectToHClip(v.vertex.xyz);
             o.uv = TRANSFORM_TEX(v.uv, _MainTex);
             return o;
         }
@@ -48,7 +48,7 @@ Shader "Custom/ScreenBlur"
             Name "Vertical Box Blur"
             
             HLSLPROGRAM
-            fixed4 frag (v2f i) : SV_Target
+            half4 frag (v2f i) : SV_Target
             {
                 float2 res = _MainTex_TexelSize.xy;
                 half4 sum = 0;
@@ -71,7 +71,7 @@ Shader "Custom/ScreenBlur"
             Name "Horizontal Box Blur"
             
             HLSLPROGRAM
-            fixed4 frag (v2f i) : SV_Target
+            half4 frag (v2f i) : SV_Target
             {
                 float2 res = _MainTex_TexelSize.xy;
                 half4 sum = 0;
