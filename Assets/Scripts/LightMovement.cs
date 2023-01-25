@@ -20,11 +20,11 @@ public class LightMovement : MonoBehaviour
         while (true)
         {
             lightTransform.Rotate(Vector3.up * 180 * lightRotationSpeed * Time.deltaTime, Space.World);
-            float angle = Mathf.PI * cameraRotationSpeed * Time.fixedTime;
+            /*float angle = Mathf.PI * cameraRotationSpeed * Time.fixedTime;
             float xPos = Mathf.Cos(angle) * radius;
             float zPos = Mathf.Sin(angle) * radius;
             cameraTransform.position = new Vector3(xPos, cameraTransform.position.y, zPos);
-            cameraTransform.LookAt(lookTarget);
+            cameraTransform.LookAt(lookTarget);*/
             yield return null;
         }
     }
