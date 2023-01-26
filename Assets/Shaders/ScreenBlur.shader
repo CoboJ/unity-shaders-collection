@@ -57,7 +57,7 @@ Shader "Custom/ScreenBlur"
 
                 for (float y = 0; y < samples; y++)
                 {
-                    float2 offset = float(0, y - _BlurStrength);
+                    float2 offset = float2(0, y - _BlurStrength);
                     sum += SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.uv + offset * res);
                 }
 
@@ -80,7 +80,7 @@ Shader "Custom/ScreenBlur"
 
                 for (float x = 0; x < samples; x++)
                 {
-                    float2 offset = float(x - _BlurStrength, 0);
+                    float2 offset = float2(x - _BlurStrength, 0);
                     sum += SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.uv + offset * res);
                 }
 
