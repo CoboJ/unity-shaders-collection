@@ -20,7 +20,8 @@ public class ScreenBlurPass : ScriptableRenderPass
         this.passSetting = settings;
         renderPassEvent = settings.renderPassEvent;
 
-        if(material = null) material = CoreUtils.CreateEngineMaterial("Hidden/Box Blur");
+        if(material == null)
+            material = CoreUtils.CreateEngineMaterial("Custom/ScreenBlur");
 
         material.SetInteger(BlurStrengthProperty, passSetting.blurStrength);
     }

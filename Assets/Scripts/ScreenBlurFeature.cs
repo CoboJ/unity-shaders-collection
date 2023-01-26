@@ -7,7 +7,7 @@ public class ScreenBlurFeature : ScriptableRendererFeature
     public class PassSetting {
         public RenderPassEvent renderPassEvent = RenderPassEvent.AfterRenderingTransparents;
 
-        [Range(1, 4)] public int downsample = 1;
+        [Range(1, 8)] public int downsample = 1;
         [Range(0, 20)] public int blurStrength = 5;
     }
     
