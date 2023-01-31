@@ -10,6 +10,8 @@ public class ObjectOutlineFeature : ScriptableRendererFeature
         public string outlinedObjectName;
         public Material writeObject;
         public Material applyOutline;
+        [Range(1, 16)] public int downsample = 1;
+
     }
     
     public PassSettings settings = new();
