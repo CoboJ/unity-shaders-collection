@@ -8,7 +8,7 @@ public class PixelationFeature : ScriptableRendererFeature
     [System.Serializable]
     public class PassSetting {
         public RenderPassEvent renderPassEvent = RenderPassEvent.BeforeRenderingTransparents;
-        [Range(1, 16)] int pixelation = 1;
+        [Range(1, 16)] public int pixelation = 1;
     }
 
     PixelationPass pass;

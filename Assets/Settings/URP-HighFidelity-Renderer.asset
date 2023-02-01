@@ -35,7 +35,8 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: 6348027829290278472}
   - {fileID: -6168034668033459958}
-  m_RendererFeatureMap: 481e246dadb918580a39922926bd66aa
+  - {fileID: 8021675376880200427}
+  m_RendererFeatureMap: 481e246dadb918580a39922926bd66aaeb2a712e41b7526f
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -93,4 +94,20 @@ MonoBehaviour:
     outlinedObjectName: characterMedium
     writeObject: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     applyOutline: {fileID: 2100000, guid: 62e738dfc825a4d3db2e4f4d30efced1, type: 2}
-    downsample: 4
+    downsample: 12
+--- !u!114 &8021675376880200427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef4b0975955b484ba89dce45f4d1ee2, type: 3}
+  m_Name: PixelationFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  passSetting:
+    renderPassEvent: 450
+    pixelation: 4
