@@ -30,11 +30,11 @@ public class ObjectOutlinePass : ScriptableRenderPass
         RenderTextureDescriptor descriptor = renderingData.cameraData.cameraTargetDescriptor;
         _Source = renderingData.cameraData.renderer.cameraColorTarget;
 
-        cmd.GetTemporaryRT(_DestinationID, descriptor);
-        _Destination = new RenderTargetIdentifier(_DestinationID);
-
         descriptor.width /= settings.downsample;
         descriptor.height /= settings.downsample;
+
+        cmd.GetTemporaryRT(_DestinationID, descriptor);
+        _Destination = new RenderTargetIdentifier(_DestinationID);
 
         cmd.GetTemporaryRT(selectionBufferID, descriptor);
         selectionBuffer = new RenderTargetIdentifier(selectionBufferID);
