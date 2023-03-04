@@ -6,4 +6,8 @@ Note: All used models are from [Kenney](https://www.kenney.nl "Kenney's Webpage"
 
 ### Toon & Outline Shaders
 
-<img src="https://github.com/CoboJ/unity-shaders-collection/blob/main/AroundCharacter.gif" width="256" height="256" /> <img src="https://github.com/CoboJ/unity-shaders-collection/blob/main/LightRotation.gif" width="256" height="256" />
+<img src="https://i.imgur.com/OpISLiV.gif" width="480" height="360" /> <img src="https://i.imgur.com/nYIOtCW.gif" width="480" height="360" />
+
+### Pixelation Shader
+
+<img src="https://i.imgur.com/AcCn1F6.gif" width="480" height="360" />
