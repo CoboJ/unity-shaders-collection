@@ -19,12 +19,18 @@ public class LightMovement : MonoBehaviour
     IEnumerator Rotation() {
         while (true)
         {
-            lightTransform.Rotate(Vector3.up * 180 * lightRotationSpeed * Time.deltaTime, Space.World);
-            /*float angle = Mathf.PI * cameraRotationSpeed * Time.fixedTime;
-            float xPos = Mathf.Cos(angle) * radius;
-            float zPos = Mathf.Sin(angle) * radius;
-            cameraTransform.position = new Vector3(xPos, cameraTransform.position.y, zPos);
-            cameraTransform.LookAt(lookTarget);*/
+            if(lightTransform != null){
+                lightTransform.Rotate(Vector3.up * 180 * lightRotationSpeed * Time.deltaTime, Space.World);
+            }
+
+            if(cameraTransform != null){
+                float angle = Mathf.PI * cameraRotationSpeed * Time.fixedTime;
+                float xPos = Mathf.Cos(angle) * radius;
+                float zPos = Mathf.Sin(angle) * radius;
+                cameraTransform.position = new Vector3(xPos, cameraTransform.position.y, zPos);
+                cameraTransform.LookAt(lookTarget);
+            }
+            
             yield return null;
         }
     }

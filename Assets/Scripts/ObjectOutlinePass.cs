@@ -35,7 +35,8 @@ public class ObjectOutlinePass : ScriptableRenderPass
 
         descriptor.width /= settings.downsample;
         descriptor.height /= settings.downsample;
-        
+        descriptor.msaaSamples = (int)MSAASamples.None; 
+
         cmd.GetTemporaryRT(selectionBufferID, descriptor);
         selectionBuffer = new RenderTargetIdentifier(selectionBufferID);
         ConfigureTarget(selectionBuffer);
