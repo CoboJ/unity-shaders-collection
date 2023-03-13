@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef4b0975955b484ba89dce45f4d1ee2, type: 3}
   m_Name: PixelationFeature
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   passSetting:
     renderPassEvent: 450
     pixelation: 8
