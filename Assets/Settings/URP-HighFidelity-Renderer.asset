@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d45732824dd4a249242dc060349c36, type: 3}
   m_Name: ObjectOutlineFeature
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   settings:
     renderPassEvent: 450
     outlinedObjectName: characterMedium
