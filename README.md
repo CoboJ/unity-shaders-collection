@@ -15,3 +15,5 @@ Note: All used models are from [Kenney](https://www.kenney.nl "Kenney's Webpage"
 ### Pixelation Shader
 
 <img src="https://i.imgur.com/AcCn1F6.gif" width="480" height="360" />
+
+### Depth Parallax Shader
